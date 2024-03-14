@@ -31,7 +31,7 @@ else: print("the number must be a positive integer")
 print("davaleba5")
 
 try:
-    number = int(input("Enter a number: "))
+    number = float(input("Enter a number: "))
 except ValueError:
     print("number is not valid")
 else:
@@ -40,16 +40,15 @@ else:
     else:
         number = number * 3 + 1
     print(number)
-   
 
 
 
 print("davaleba6")
-num = 10
+number = 10
 
-while num > 0:
-    print(num)
-    num -= 1
+while number > 0:
+    print(number)
+    number -= 1
 
 print("davaleba7")
 name = input('Enter your name, or type quit to exit ')
@@ -68,8 +67,8 @@ while number <= 20:
 print("davaleba9")
 while True:
     try:
-        num = float(input("Enter a number (positive): "))
-        if num > 0:
+        number = float(input("Enter a number (positive): "))
+        if number > 0:
             break
         else:
             print("Please enter a positive number.")
@@ -80,6 +79,5 @@ while True:
 print("davaleba10")
 number = 1
 while number <= 10:
-    square = number ** 2
-    print(f"{number}  {square}")
+    print(number, "\t",number ** 2)
     number += 1
